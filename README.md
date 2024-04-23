@@ -2,6 +2,12 @@
 
 if you come from YouTube 🫶🏻
 
+
+<div align="center">
+  <img src="https://m.media-amazon.com/images/A/V1/EBbHQwpOAOgEcC0shaeqBeA1sBb+Py7TaLl6/a0i6h54PFyREIfyLTbruE9iFKGTGhlWuVgMrvReOjAmIuwxRPaNz9cdmw+fo4ZknoYQN+zolhm0z/s060lY4RYObdW6Dqn+YTgQe5AqJYpwk8KCTd0VwxAtluuY0Glj2uQLDUUBdauJJJujDmQlRD1Eh+QE2psskPcHMPo1BtU5ZMpbApadrYw+0uSERzzeKcY0RY6CQ2/D1U2P+XK/Ml2mJbwOq7nRBcYv6/JanlBl5km5PLV3Pt7UnAjz3rumud4XdHI28HseuO93w+3cKUY9ly60SNLXSmwm5hy/3dErtpDamw==_/eyJidWNrZXQiOiJwdi1zdGFybGlnaHQtY29udGVudGRiLW1lZGlhLXByb2QtdXMtZWFzdC0xIiwib2JqZWN0S2V5IjoidXBsb2Fkcy8yMDI0LTA0LTA0LzVhM2QyOGQ2LWE0NDYtNGVjZS05YmQ1LTA4MjNmN2Q3NzQ4ZS5wbmciLCJleHBpcmVEYXRlVGltZSI6IjI1MjQ2MzY3OTkiLCJzdHlsZUNvZGUiOiJfU1g3MDBfRk1wbmdfIn0=" alt="Project Image" width="400">
+</div>
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -11,7 +17,7 @@ if you come from YouTube 🫶🏻
 
 ## Introduction
 
-The goal of the project is to recreate the Amazon Prime "Explor" category for the Fallout series. 
+The goal of the project is to recreate the Amazon Prime "Explore" category for the Fallout series. 
 
 ## Installation
 
