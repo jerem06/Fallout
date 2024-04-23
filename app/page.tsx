@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { vaultData, wastlandersData } from "./constant";
 import { motion, useAnimation } from "framer-motion";
@@ -15,7 +15,9 @@ export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrolled, setScrolled] = useState(false);
 
-  const allData = [vaultData, wastlandersData];
+  const allData = useMemo(() => {
+    return [vaultData, wastlandersData];
+  }, []);
 
   const controls = useAnimation();
 
@@ -24,7 +26,7 @@ export default function Home() {
       x: scrolled ? -allData[category].length * 50 : 0,
       transition: { duration: 0.7 },
     });
-  }, [scrolled]);
+  }, [scrolled, allData, category, controls]);
   return (
     <main className="flex flex-1 h-screen w-screen justify-between">
       <div className="absolute h-[90%] w-full z-0">
@@ -56,11 +58,12 @@ export default function Home() {
                 onClick={() => {
                   setSelectedIndex(0);
                   setCategory(0);
-                  if (category !== 0)
+                  if (category !== 0) {
                     controls.set({
                       x: 0,
                     });
-                  setScrolled(false);
+                    setScrolled(false);
+                  }
                 }}
               >
                 <p
@@ -80,11 +83,12 @@ export default function Home() {
                 onClick={() => {
                   setSelectedIndex(0);
                   setCategory(1);
-                  if (category !== 1)
+                  if (category !== 1) {
                     controls.set({
                       x: 0,
                     });
-                  setScrolled(false);
+                    setScrolled(false);
+                  }
                 }}
               >
                 <p
@@ -123,8 +127,6 @@ export default function Home() {
             <motion.div
               className="flex flex-row flex-grow-0 w-full"
               animate={controls}
-              //animate={{ x: scrolled ? -allData[category].length * 50 : 0 }}
-              // transition={{ duration: 0.7 }}
             >
               {allData[category].map((card, index) => (
                 <motion.div
@@ -135,6 +137,7 @@ export default function Home() {
                   )}
                   onClick={() => setSelectedIndex(index)}
                   transition={{ duration: 0.2 }}
+                  key={index}
                 >
                   <Image
                     src={allData[category][index].thumbnail}
