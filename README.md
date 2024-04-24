@@ -13,6 +13,7 @@ if you come from YouTube 🫶🏻
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Demo](#demo)
 - [License](#license)
 
 ## Introduction
@@ -54,6 +55,11 @@ To use this project, follow these steps:
     ```
 
 3. Open your web browser and go to `http://localhost:3000`.
+
+## Demo
+
+👇🏻
+[Live Demo](https://vercel.com/jerem06s-projects/fallout)
 
 
 ## License
