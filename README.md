@@ -58,8 +58,8 @@ To use this project, follow these steps:
 
 ## Demo
 
-👇🏻
-[Live Demo](https://vercel.com/jerem06s-projects/fallout)
+👉
+[Live Demo](https://vercel.com/jerem06s-projects/fallout](https://fallout-jerem-dev.vercel.app/)
 
 
 ## License
