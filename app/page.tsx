@@ -101,11 +101,11 @@ export default function Home() {
                 </p>
               </button>
             </div>
-            <h1 className="my-4 font-bold text-3xl">
+            <h1 className="my-4 font-bold text-3xl text-white">
               {allData[category][selectedIndex].name}
             </h1>
 
-            <h2 className="font-thin pr-14">
+            <h2 className="font-thin pr-14 text-white">
               {allData[category][selectedIndex].description}
             </h2>
           </div>
